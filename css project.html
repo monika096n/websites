@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Web Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<style>
+		 body{
+		 		margin:0;
+		 		padding:0;
+		 		line-height:1.5em;
+
+		     }
+
+        #header{
+        	background:black;
+        	font-family: Arial;
+        	height:100px;
+        }
+
+        #contentwrapper{
+        	float: left;
+        	width: 100%;
+        }
+
+        #contentcolumn{
+        	margin:0 230px 0 230px;
+        }
+
+        #leftcolumn{
+        	float:left;
+        	width: 230px;
+        	margin-left:-100%;
+        	background: #24C8FF;
+        }
+
+        #rightcolumn{
+        	 float:left;
+        	 width:230px;
+        	 margin-left:-230px;
+        	 background:#FFFB00;
+        }
+       .innertext{
+         	margin: 20px;
+         	font-family:Arial;
+         	color: #5E5E5E;
+
+       }
+       #footer{
+       	  clear:left;
+       	  width:100%;
+       	  background: black;
+       	  color: #FFF;
+       	  font-family: Arial;
+       	  text-align: center;
+       	  padding: 4px;
+       }
+
+
+
+    /* navigation bar */
+
+        ul{
+
+        	list-style-type:none;
+        	margin:0;
+        	padding:0;
+        	background: #000000;
+
+        }
+
+        li{
+        	float: left;
+        	border-right:1px solid #BBB;
+        }
+        li:last-child{
+       	    border-right:none;
+        }
+        li  a{
+        	display:block;
+        	color:white;
+        	text-align:center;
+        	padding: 14px 16px;
+        	text-decoration:none;
+
+         }
+         li a:hover:not(.active){
+         	  background: #808080;
+         }
+
+         .active{
+         	background: #0099FF;
+         }
+
+
+       /* responsive layout css */
+          @media(max-width:840px){  /*right column down*/
+               
+               #leftcolumn{
+               	  margin-left: -100%;
+
+               }
+               #rightcolumn{
+               	  float:none;
+               	  width:100%;
+               	  margin-left:0;
+                  clear:both;
+               }
+               #contentcolumnn{
+               	margin-right:0; /*set margin to left */
+               }
+
+            }
+            @media(max-width:600px){  /*right column down*/
+               
+               #leftcolumn{
+               	float:none;
+               	  width:100%;
+                  clear:both;
+                  margin-left:0;
+               	 
+
+          
+               }
+               #contentcolumn{
+               	margin-left:0; /*set margin to left */
+               }
+
+            }
+
+	</style>
+</head>
+<body>
+       <div id="container">
+            <div id="header">
+            	<ul style="display: inline">
+            	   <li><a class="active" href="#home">Home</a></li>
+            	   <li><a href="#about">About</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+              
+                </ul>
+            </div>
+
+
+            <div id="contentwrapper">
+                  
+              <div id="contentcolumn">
+ 
+                 <div class="innertext">
+                 	<b>Welcome!</b><br>
+                 	Nature, in the broadest sense, is the natural, physical, or material world or universe. "Nature" can refer to the phenomena of the physical world, and also to life in The study of nature is a large, if not the only, part of science. Although humans are part of nature, human activity is often understood as a separate category from other natural phenomena.<br>
+                 	                <br> <br>
+                    Earth is the only planet known to support life, and its natural features are the subject of many fields of scientific research. Within the solar system, it is third closest to the sun; it is the largest terrestrial planet and the fifth largest overall. Its most prominent climatic features are its two large polar regions, two relatively narrow temperate zones, and a wide equatorial tropical to subtropical region.[7] Precipitation varies widely with location, from several metres of water per year to less than a millimetre. 71 percent of the Earth's surface is covered by salt-water oceans. The remainder consists of continents and islands, with most of the inhabited land in the Northern Hemisphere.<br>
+                                        <br> <br>
+                    Earth has evolved through geological and biological processes that have left traces of the original conditions. The outer surface is divided into several gradually migrating tectonic plates. The interior remains active, with a thick layer of plastic mantle and an iron-filled core that generates a magnetic field. This iron core is composed of a solid inner phase, and a fluid outer phase. Convective motion in the core generates electric currents through dynamo action, and these, in turn, generate the geomagnetic field.
+
+                  </div>
+
+
+               </div>
+          </div> <!--content wrapper-->
+
+
+               <div id="leftcolumn">
+
+               	   <div class="innertext">
+								   <b>Left margin:230px</b><br>
+               	                    The word nature is derived from the Latin word natura, or "essential qualities, innate disposition", and in ancient times, literally meant "birth".In ancient philosophy, Natura is mostly used as the Latin translation of the Greek word physis  which originally related to the intrinsic characteristics that plants, animals, and other features of the world develop of their own accord. The concept of nature as a whole, the physical universe, is one of several expansions of the original notion;[1] it began with certain core applications of the word φύσις by pre-Socratic philosophers.
+                         
+               	   		</div>																								
+
+           			</div>
+
+               <div id="rightcolumn">
+ 
+                           <div class="innertext">
+                                        <b>Left margin:230px</b><br>
+                                    Within the various uses of the word today, "nature" often refers to geology and wildlife. Nature can refer to the general realm of living plants and animals, and in some cases to the processes associated with inanimate objects—the way that particular types of things exist and change of their own accord, such as the weather and geology of the Earth. It is often taken to mean the "natural environment" or wilderness—wild animals, rocks, forest, and in general those things that have not been substantially altered by human intervention, or which persist despite human intervention. 
+
+               	   	
+               	   		</div>	
+
+               </div>
+
+          
+
+            <div id="footer"> Footer </div>
+
+       </div>
+
+
+</body>
+</html>
